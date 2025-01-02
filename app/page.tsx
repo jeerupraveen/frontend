@@ -1,19 +1,16 @@
 'use client';
-import ForgotPassword from "@/components/authentication/forgetpassword/ForgetPassword";
-import OTPValidation from "@/components/authentication/forgetpassword/OTPvalidation";
-import ResetPassword from "@/components/authentication/forgetpassword/ResetPassword";
-import SignIn from "@/components/authentication/signin/Signin";
-import SignUp from "@/components/authentication/signup/Signup";
+import ForgotPassword from "@/pages/authentication/forgetpassword/ForgetPassword";
+import OTPValidation from "@/pages/authentication/forgetpassword/OTPvalidation";
+import ResetPassword from "@/pages/authentication/forgetpassword/ResetPassword";
+import SignIn from "@/pages/authentication/signin/Signin";
+import SignUp from "@/pages/authentication/signup/Signup";
+import Link from "next/link";
 import * as React from "react";
 
 export default function Home() {
   return (
     <>
-    {/* <ForgotPassword/> */}
-    {/* <OTPValidation/> */}
-    <ResetPassword/>/
-    {/* <SignIn/> */}
-    {/* <SignUp/> */}
+    <Link href="/pages/authentication/forgetpassword/">hello</Link>
     </>
   );
 }
